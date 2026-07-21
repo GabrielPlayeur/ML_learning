@@ -1,0 +1,70 @@
+[project]
+name = "mitdeeplearning"
+version = "0.7.5"
+description = "MIT 6.S191 software labs — local PyTorch setup"
+requires-python = ">=3.12"
+
+# Deliberately NOT the dependency list from the upstream setup.py. That one pulls
+# tensorflow, gym and openai for every user; these are only what the PyTorch labs
+# actually import. For the TF notebooks instead: `uv add tensorflow`.
+dependencies = [
+    # shared across all labs
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "regex",
+    "tqdm",
+    # mitdeeplearning.lab2 (face dataset loader)
+    "h5py",
+    # headless variant: the labs only call imread/resize/dilate, never a cv2 GUI
+    # window. Plain opencv-python needs libGL.so.1, which a WSL install lacks.
+    "opencv-python-headless",
+    # lab1 + lab2.
+    # Pinned rather than `>=`: this is the exact version verified end-to-end on this
+    # machine (CUDA available, sm_75 present in the build's arch list, labs importing
+    # clean). An open range resolves to 2.11.0, unverified here.
+    "torch==2.10.0",
+    "torchvision",
+    "torchsummary",
+    # lab3 (LLM finetuning)
+    "transformers",
+    "datasets",
+    "peft",
+    "lion-pytorch",
+    "openai",
+    "pandas",
+    # notebooks import this at the top of lab1/PT_Part2 and both lab2 parts
+    "comet-ml",
+    # the notebook runtime itself, so `uv run jupyter lab` needs no global install
+    "jupyterlab",
+    "ipywidgets",
+]
+
+# This index guarantees a build with sm_75 (Turing / GTX 16xx) in its arch list.
+# cu130 drops sm_75, so not that one.
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["mitdeeplearning"]
+
+[tool.setuptools.package-data]
+mitdeeplearning = [
+    "bin/*",
+    "data/*",
+    "data/text_styles/*",
+    "data/faces/DF/*",
+    "data/faces/DM/*",
+    "data/faces/LF/*",
+    "data/faces/LM/*",
+]
