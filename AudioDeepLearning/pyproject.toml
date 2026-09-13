@@ -1,0 +1,40 @@
+[project]
+name = "audiodeeplearning"
+version = "0.7.5"
+description = "Audio Deep Learning — PyTorch + librosa"
+requires-python = ">=3.12"
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "regex",
+    "tqdm",
+    # Pinned rather than `>=`: this is the exact version verified end-to-end on this
+    # machine (CUDA available, sm_75 present in the build's arch list, imports
+    # clean). An open range resolves to 2.11.0, unverified here.
+    "torch==2.10.0",
+    "torchvision",
+    "torchsummary",
+    # audio loading/feature extraction (STFT, mel spectrograms, MFCCs, etc.)
+    "librosa>=0.11.0",
+    # the notebook runtime itself, so `uv run jupyter lab` needs no global install
+    "jupyterlab",
+    "ipywidgets",
+]
+
+# This index guarantees a build with sm_75 (Turing / GTX 16xx) in its arch list.
+# cu130 drops sm_75, so not that one.
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+
+# No local package (mitdeeplearning/ and friends) to install in editable mode here
+# — this pyproject.toml only exists to pin dependencies for notebooks/scripts.
+[tool.uv]
+package = false
