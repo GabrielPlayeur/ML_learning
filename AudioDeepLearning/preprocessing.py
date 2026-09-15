@@ -28,12 +28,17 @@ def save_mfcc(dataset_path, json_path, n_mfcc=13, n_fft=2048, hop_length=512, nu
 
         semantic_label = dirpath.split("/")[-1]
         data["mapping"].append(semantic_label)
-        print(f"Processing {semantic_label}")
+        print(f"\n- Processing {semantic_label}")
 
         for f in filenames:
             file_path = os.path.join(dirpath, f)
 
-            signal, sr = librosa.load(file_path, sr=SAMPLE_RATE)
+            try:
+                signal, sr = librosa.load(file_path, sr=SAMPLE_RATE)
+            except Exception as e:
+                print(f"  ❗️ Skipping corrupted file {file_path}\n")
+                continue
+
             # process segment
             for s in range(num_segments):
                 start_sample = num_samples_per_segment * s
@@ -49,7 +54,7 @@ def save_mfcc(dataset_path, json_path, n_mfcc=13, n_fft=2048, hop_length=512, nu
                 mfcc = mfcc.T
 
                 if len(mfcc) == exp_num_mfcc_vec_per_segment:
-                    data["mfcc"] = mfcc.tolist()
+                    data["mfcc"].append(mfcc.tolist())
                     data["labels"].append(i-1)
                     print(f"{file_path}: segment {s+1}")
 
