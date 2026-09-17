@@ -23,7 +23,7 @@ def evaluate(model, loader, criterion, device):
 	}
 
 
-def plot_training_history(history, output_path: str = "training_curves.png"):
+def plot_training_history(history, output_path: str = "training_curves_mlp.png"):
     epochs = range(1, len(history["train_loss"]) + 1)
     figure, (loss_axis, accuracy_axis) = plt.subplots(1, 2, figsize=(12, 4))
 
