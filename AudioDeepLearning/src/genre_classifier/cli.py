@@ -1,13 +1,23 @@
 import os
+import argparse
 
 import numpy as np
 import torch
 
-from .config import TrainingConfig
+from .config import MLPConfig, CNNConfig
 from .data import create_data_loader, load_data, normalize_data, split_data
 from .evaluation import plot_training_history
-from .model import GenreClassifier
+from .models import MLPGenreClassifier, CNNGenreClassifier
 from .trainer import Trainer
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--model",
+        choices=("mlp", "cnn"),
+        required=True,
+    )
+    return parser.parse_args()
 
 
 def set_seed(seed: int) -> None:
@@ -17,8 +27,36 @@ def set_seed(seed: int) -> None:
 		torch.cuda.manual_seed_all(seed)
 
 
+def create_model(model_name, input_shape, num_classes, config):
+    if model_name == "mlp":
+        return MLPGenreClassifier(
+            input_shape=input_shape,
+            num_classes=num_classes,
+            hidden_layers=config.hidden_layers,
+        )
+
+    if model_name == "cnn":
+        return CNNGenreClassifier(
+            input_shape=input_shape,
+            channels=config.channels,
+            num_classes=num_classes,
+            dropout=config.dropout,
+        )
+
+    raise ValueError(f"Modèle inconnu : {model_name}")
+
+def get_config(model_name: str):
+    if model_name == "mlp":
+        return MLPConfig()
+
+    if model_name == "cnn":
+        return CNNConfig()
+
+    raise ValueError(f"Modèle inconnu : {model_name}")
+
 def main() -> None:
-    config = TrainingConfig()
+    args = parse_args()
+    config = get_config(args.model)
     set_seed(config.random_seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Device: {device}")
@@ -36,10 +74,11 @@ def main() -> None:
     validation_loader = create_data_loader(validation_inputs, validation_targets, config.batch_size	)
     test_loader = create_data_loader(test_inputs, test_targets, config.batch_size)
 
-    model = GenreClassifier(
+    model = create_model(
+        args.model,
         input_shape=train_inputs.shape[1:],
         num_classes=len(np.unique(targets)),
-        dropout=config.dropout,
+        config=config,
     ).to(device)
 
     optimizer = torch.optim.AdamW(

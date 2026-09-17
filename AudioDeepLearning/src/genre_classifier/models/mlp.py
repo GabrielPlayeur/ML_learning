@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-class GenreClassifier(nn.Module):
+class MLPGenreClassifier(nn.Module):
     def __init__(
         self,
         input_shape: tuple[int, int] = (130, 13),
