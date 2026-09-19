@@ -4,17 +4,17 @@ import argparse
 import numpy as np
 import torch
 
-from .config import MLPConfig, CNNConfig
+from .config import MLPConfig, CNNConfig, RNNLSTMConfig
 from .data import create_data_loader, load_data, normalize_data, split_data
 from .evaluation import plot_training_history
-from .models import MLPGenreClassifier, CNNGenreClassifier
+from .models import MLPGenreClassifier, CNNGenreClassifier, RNNLSTMGenreClassifier
 from .trainer import Trainer
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--model",
-        choices=("mlp", "cnn"),
+        choices=("mlp", "cnn", "rnn"),
         required=True,
     )
     return parser.parse_args()
@@ -43,6 +43,14 @@ def create_model(model_name, input_shape, num_classes, config):
             dropout=config.dropout,
         )
 
+    if model_name == "rnn":
+        return RNNLSTMGenreClassifier(
+            input_shape=input_shape,
+            hidden_layers=config.hidden_layers,
+            num_classes=num_classes,
+            dropout=config.dropout,
+        )
+
     raise ValueError(f"Modèle inconnu : {model_name}")
 
 def get_config(model_name: str):
@@ -51,6 +59,9 @@ def get_config(model_name: str):
 
     if model_name == "cnn":
         return CNNConfig()
+
+    if model_name == "rnn":
+        return RNNLSTMConfig()
 
     raise ValueError(f"Modèle inconnu : {model_name}")
 
