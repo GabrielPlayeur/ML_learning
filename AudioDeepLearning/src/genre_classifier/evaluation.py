@@ -33,6 +33,7 @@ def plot_training_history(history, output_path: str = "training_curves_mlp.png")
     loss_axis.set_xlabel("Époque")
     loss_axis.set_ylabel("Cross-entropy")
     loss_axis.legend()
+    loss_axis.set_ylim(bottom=0)
     loss_axis.grid(alpha=0.3)
 
     accuracy_axis.plot(epochs, history["train_accuracy"], label="Entraînement")

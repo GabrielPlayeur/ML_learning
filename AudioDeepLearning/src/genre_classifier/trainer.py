@@ -35,6 +35,7 @@ class Trainer:
             "train_accuracy": [],
             "validation_accuracy": [],
         }
+        best_validation_loss = float("inf")
         best_accuracy = float("-inf")
         best_model_state = copy.deepcopy(self.model.state_dict())
         epochs_without_improvement = 0
@@ -55,17 +56,22 @@ class Trainer:
             history["train_accuracy"].append(train_metrics["accuracy"])
             history["validation_accuracy"].append(validation_metrics["accuracy"])
 
-            validation_accuracy = validation_metrics["accuracy"]
-            if validation_accuracy > best_accuracy + min_delta:
-                best_accuracy = validation_accuracy
+            validation_loss = validation_metrics["loss"]
+            if validation_loss < best_validation_loss - min_delta:
+                best_validation_loss = validation_loss
                 best_model_state = copy.deepcopy(self.model.state_dict())
                 epochs_without_improvement = 0
             else:
                 epochs_without_improvement += 1
 
+            validation_accuracy = validation_metrics['accuracy']
+            if validation_accuracy > best_accuracy:
+                best_accuracy = validation_accuracy
+
             print(
                 f"Epoch {epoch + 1}/{epochs} - "
-                f"loss: {train_loss:.4f} - "
+                f"train loss: {train_loss:.4f} - "
+                f"validation loss: {validation_loss:.4f} - "
                 f"train accuracy: {train_metrics['accuracy']:.4f} - "
                 f"validation accuracy: {validation_accuracy:.4f}"
             )

@@ -12,27 +12,26 @@ class CNNGenreClassifier(nn.Module):
         super().__init__()
 
         self.network = nn.Sequential(
-            nn.Conv2d(1, channels[0], kernel_size=3),
+            nn.Conv2d(1, channels[0], kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=3, stride=2, padding=1),
             nn.BatchNorm2d(channels[0]),
+            nn.MaxPool2d(kernel_size=2, stride=2),
 
-            nn.Conv2d(channels[0], channels[1], kernel_size=3),
+            nn.Conv2d(channels[0], channels[1], kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=3, stride=2, padding=1),
             nn.BatchNorm2d(channels[1]),
+            nn.MaxPool2d(kernel_size=2, stride=2),
 
-            nn.Conv2d(channels[1], channels[2], kernel_size=2),
+            nn.Conv2d(channels[1], channels[2], kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2, stride=2, padding=1),
             nn.BatchNorm2d(channels[2]),
 
+            nn.AdaptiveAvgPool2d((1, 1)),
             nn.Flatten(),
-            nn.Linear(channels[2] * 16 * 1, 64),
+            nn.Linear(channels[2], 64),
             nn.ReLU(),
             nn.Dropout(dropout),
-
-            nn.Linear(64, num_classes)
+            nn.Linear(64, num_classes),
         )
 
     def forward(self, inputs: torch.Tensor) -> torch.Tensor:
