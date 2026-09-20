@@ -60,12 +60,15 @@ def save_mfcc(dataset_path, json_path, n_mfcc=13, n_fft=2048, hop_length=512, nu
                                             n_mfcc=n_mfcc,
                                             hop_length=hop_length
                                             )
-                mfcc = mfcc.T
+                delta = librosa.feature.delta(mfcc)
+                delta_delta = librosa.feature.delta(mfcc, order=2)
+                features = np.concatenate((mfcc, delta, delta_delta), axis=0)
+                features = features.T
 
                 track_id = os.path.relpath(file_path, dataset_path)
 
-                if len(mfcc) == exp_num_mfcc_vec_per_segment:
-                    data["mfcc"].append(mfcc.tolist())
+                if len(features) == exp_num_mfcc_vec_per_segment:
+                    data["mfcc"].append(features.tolist())
                     data["labels"].append(label)
                     data["track_ids"].append(track_id)
                     print(f"{file_path}: segment {s+1}")
