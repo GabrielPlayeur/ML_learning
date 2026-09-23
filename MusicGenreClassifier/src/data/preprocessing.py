@@ -39,9 +39,9 @@ def extract_features(dataset_path, n_mfcc=13, n_fft=2048, hop_length=512, num_se
                 segment = signal[start:start + num_samples_per_segment]
 
                 mfcc = librosa.feature.mfcc(y=segment, sr=SAMPLE_RATE, n_mfcc=n_mfcc, n_fft=n_fft, hop_length=hop_length)
-                # features = np.concatenate([mfcc, librosa.feature.delta(mfcc), librosa.feature.delta(mfcc, order=2),], axis=0).T
+                features = np.concatenate([mfcc, librosa.feature.delta(mfcc), librosa.feature.delta(mfcc, order=2),], axis=0).T
                 # shape: (frames, 3*n_mfcc)
-                features = mfcc.T
+                # features = mfcc.T
 
                 if len(features) == exp_frames:
                     mfcc_list.append(features)

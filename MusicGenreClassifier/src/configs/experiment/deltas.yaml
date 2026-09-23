@@ -1,0 +1,6 @@
+# @package _global_
+data:
+  use_deltas: true
+
+wandb:
+  run_name: "addition-deltas"

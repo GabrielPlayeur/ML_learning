@@ -1,0 +1,13 @@
+dataset_path: dataset/mfcc.npz
+batch_size: 32
+test_size: 0.15
+validation_size: 0.15
+n_mfcc: 13
+random_seed: 42
+use_deltas: false
+oversample_classes: []
+oversample_factor: 1.0
+aug_probability: 0.5
+aug_noise_std: 0.02
+aug_time_mask_max: 8
+aug_frequency_mask_max: 3

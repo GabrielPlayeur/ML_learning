@@ -14,6 +14,7 @@ class GTZANDataModule(L.LightningDataModule):
             test_size: float = 0.15,
             validation_size: float = 0.15,
             random_seed: int = 42,
+            use_deltas: bool = False,
             oversample_classes: tuple = (),
             oversample_factor: float = 1.0,
             aug_probability: float = 0.5,
@@ -58,7 +59,12 @@ class GTZANDataModule(L.LightningDataModule):
 
     def load_data(self):
         data = np.load(self.hparams.dataset_path, allow_pickle=False)
-        return data["mfcc"], data["labels"], data["track_ids"]
+
+        inputs = data["mfcc"]
+        if not self.hparams.use_deltas:
+            inputs = inputs[:, :, :13]
+
+        return inputs, data["labels"], data["track_ids"]
 
     def split_data(self, inputs, targets, groups):
         val_test_size = self.hparams.test_size+self.hparams.validation_size
