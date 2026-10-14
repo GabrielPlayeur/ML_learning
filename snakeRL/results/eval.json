@@ -1,0 +1,3104 @@
+{
+ "greedy": {
+  "summary": {
+   "mean": 28.54,
+   "ci95": [
+    26.26,
+    30.88
+   ],
+   "median": 29.0,
+   "max": 65,
+   "min": 5,
+   "mean_steps": 210.31,
+   "causes": {
+    "self-avoidable": 0.02,
+    "self-trapped": 0.98
+   }
+  },
+  "games": [
+   {
+    "score": 56,
+    "steps": 417,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 34,
+    "steps": 245,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 28,
+    "steps": 190,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 42,
+    "steps": 294,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 26,
+    "steps": 214,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 21,
+    "steps": 143,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 35,
+    "steps": 277,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 28,
+    "steps": 212,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 29,
+    "steps": 193,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 31,
+    "steps": 219,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 57,
+    "steps": 428,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 40,
+    "steps": 284,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 28,
+    "steps": 203,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 15,
+    "steps": 105,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 40,
+    "steps": 282,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 17,
+    "steps": 141,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 11,
+    "steps": 54,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 42,
+    "steps": 273,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 20,
+    "steps": 144,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 34,
+    "steps": 269,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 76,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 32,
+    "steps": 198,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 43,
+    "steps": 395,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 34,
+    "steps": 214,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 16,
+    "steps": 96,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 43,
+    "steps": 312,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 65,
+    "steps": 580,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 32,
+    "steps": 239,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 5,
+    "steps": 36,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 35,
+    "steps": 275,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 232,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 18,
+    "steps": 127,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 32,
+    "steps": 209,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 39,
+    "steps": 283,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 21,
+    "steps": 147,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 43,
+    "steps": 351,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 36,
+    "steps": 294,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 14,
+    "steps": 90,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 41,
+    "steps": 290,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 48,
+    "steps": 394,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 11,
+    "steps": 88,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 100,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 27,
+    "steps": 219,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 27,
+    "steps": 168,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 32,
+    "steps": 253,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 31,
+    "steps": 240,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 32,
+    "steps": 220,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 29,
+    "steps": 213,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 29,
+    "steps": 199,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 18,
+    "steps": 133,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 18,
+    "steps": 125,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 13,
+    "steps": 106,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 37,
+    "steps": 280,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 22,
+    "steps": 175,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 24,
+    "steps": 152,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 16,
+    "steps": 111,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 35,
+    "steps": 213,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 22,
+    "steps": 139,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 29,
+    "steps": 228,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 43,
+    "steps": 359,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 39,
+    "steps": 239,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 33,
+    "steps": 247,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 37,
+    "steps": 350,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 14,
+    "steps": 117,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 24,
+    "steps": 154,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 44,
+    "steps": 333,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 27,
+    "steps": 188,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 10,
+    "steps": 63,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 9,
+    "steps": 46,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 21,
+    "steps": 161,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 22,
+    "steps": 166,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 29,
+    "steps": 205,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 13,
+    "steps": 71,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 51,
+    "steps": 364,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 238,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 83,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 41,
+    "steps": 297,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 14,
+    "steps": 88,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 25,
+    "steps": 165,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 23,
+    "steps": 141,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 17,
+    "steps": 106,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 35,
+    "steps": 256,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 24,
+    "steps": 175,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 31,
+    "steps": 227,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 37,
+    "steps": 286,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 249,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 40,
+    "steps": 259,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 11,
+    "steps": 88,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 25,
+    "steps": 151,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 24,
+    "steps": 189,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 15,
+    "steps": 115,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 40,
+    "steps": 337,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 22,
+    "steps": 160,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 17,
+    "steps": 124,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 42,
+    "steps": 323,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 22,
+    "steps": 149,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 48,
+    "steps": 429,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 40,
+    "steps": 275,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 21,
+    "steps": 164,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 15,
+    "steps": 107,
+    "cause": "self",
+    "safe_moves": 0
+   }
+  ]
+ },
+ "flood-greedy": {
+  "summary": {
+   "mean": 181.72,
+   "ci95": [
+    169.2,
+    193.01
+   ],
+   "median": 209.0,
+   "max": 222,
+   "min": 3,
+   "mean_steps": 3644.51,
+   "causes": {
+    "self-trapped": 0.1,
+    "starving": 0.85,
+    "timeout": 0.05
+   }
+  },
+  "games": [
+   {
+    "score": 203,
+    "steps": 4147,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 199,
+    "steps": 3936,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 34,
+    "steps": 496,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 49,
+    "steps": 665,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 197,
+    "steps": 4471,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4119,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 220,
+    "steps": 4740,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 199,
+    "steps": 3636,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 212,
+    "steps": 4155,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 220,
+    "steps": 4389,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 203,
+    "steps": 3899,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 37,
+    "steps": 499,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 215,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 217,
+    "steps": 4189,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4071,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 23,
+    "steps": 385,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 193,
+    "steps": 3390,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 205,
+    "steps": 3985,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 213,
+    "steps": 4509,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4020,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 199,
+    "steps": 3770,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 23,
+    "steps": 368,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 213,
+    "steps": 4323,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4340,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 203,
+    "steps": 4232,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 103,
+    "steps": 1208,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 209,
+    "steps": 4276,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 3964,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4617,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4220,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 201,
+    "steps": 4367,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4099,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 171,
+    "steps": 2924,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 189,
+    "steps": 4033,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 211,
+    "steps": 4219,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 205,
+    "steps": 4184,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 189,
+    "steps": 3523,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 203,
+    "steps": 4205,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 57,
+    "steps": 756,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4439,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4728,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 207,
+    "steps": 4280,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 218,
+    "steps": 3907,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 199,
+    "steps": 3555,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4368,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 11,
+    "steps": 309,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 24,
+    "steps": 386,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 207,
+    "steps": 4414,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 3,
+    "steps": 237,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 211,
+    "steps": 4866,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4498,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 177,
+    "steps": 2942,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 213,
+    "steps": 4833,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 199,
+    "steps": 3891,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 191,
+    "steps": 4468,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 209,
+    "steps": 4334,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 203,
+    "steps": 3997,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 27,
+    "steps": 423,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 217,
+    "steps": 3972,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4804,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 3994,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4607,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 189,
+    "steps": 3221,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 214,
+    "steps": 4905,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 207,
+    "steps": 3845,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4388,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4371,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 213,
+    "steps": 4419,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 207,
+    "steps": 4074,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 3725,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 214,
+    "steps": 4253,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 195,
+    "steps": 3791,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 195,
+    "steps": 3669,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 70,
+    "steps": 859,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 205,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 47,
+    "steps": 625,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 63,
+    "steps": 927,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4399,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4547,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 216,
+    "steps": 4295,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 222,
+    "steps": 4303,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 207,
+    "steps": 4057,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 16,
+    "steps": 323,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 216,
+    "steps": 4019,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 209,
+    "steps": 4258,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 197,
+    "steps": 4134,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 3808,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 195,
+    "steps": 4075,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4566,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 211,
+    "steps": 3675,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 213,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 203,
+    "steps": 3793,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 3662,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 220,
+    "steps": 4589,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 205,
+    "steps": 3847,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4865,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4494,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 183,
+    "steps": 3089,
+    "cause": "starving",
+    "safe_moves": 1
+   }
+  ]
+ },
+ "mlp-8": {
+  "summary": {
+   "mean": 25.14,
+   "ci95": [
+    23.06975,
+    27.250249999999998
+   ],
+   "median": 25.0,
+   "max": 55,
+   "min": 5,
+   "mean_steps": 187.58,
+   "causes": {
+    "self-avoidable": 0.02,
+    "self-trapped": 0.93,
+    "walls-trapped": 0.05
+   }
+  },
+  "games": [
+   {
+    "score": 24,
+    "steps": 157,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 39,
+    "steps": 263,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 25,
+    "steps": 203,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 11,
+    "steps": 73,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 26,
+    "steps": 199,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 20,
+    "steps": 141,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 27,
+    "steps": 205,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 16,
+    "steps": 126,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 15,
+    "steps": 107,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 33,
+    "steps": 205,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 38,
+    "steps": 307,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 236,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 110,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 8,
+    "steps": 77,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 14,
+    "steps": 92,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 23,
+    "steps": 165,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 24,
+    "steps": 156,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 23,
+    "steps": 180,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 22,
+    "steps": 146,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 11,
+    "steps": 95,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 14,
+    "steps": 91,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 49,
+    "steps": 312,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 19,
+    "steps": 127,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 19,
+    "steps": 159,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 49,
+    "steps": 359,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 20,
+    "steps": 127,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 34,
+    "steps": 225,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 83,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 15,
+    "steps": 110,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 39,
+    "steps": 294,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 39,
+    "steps": 315,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 24,
+    "steps": 133,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 27,
+    "steps": 180,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 25,
+    "steps": 196,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 33,
+    "steps": 274,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 14,
+    "steps": 98,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 7,
+    "steps": 50,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 20,
+    "steps": 147,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 46,
+    "steps": 386,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 55,
+    "steps": 358,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 19,
+    "steps": 125,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 28,
+    "steps": 227,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 36,
+    "steps": 278,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 17,
+    "steps": 102,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 178,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 26,
+    "steps": 187,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 28,
+    "steps": 215,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 53,
+    "steps": 366,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 38,
+    "steps": 243,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 258,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 23,
+    "steps": 182,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 37,
+    "steps": 305,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 9,
+    "steps": 47,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 22,
+    "steps": 157,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 23,
+    "steps": 153,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 32,
+    "steps": 284,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 247,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 33,
+    "steps": 245,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 97,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 22,
+    "steps": 155,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 20,
+    "steps": 129,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 9,
+    "steps": 69,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 241,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 20,
+    "steps": 133,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 25,
+    "steps": 233,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 31,
+    "steps": 258,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 20,
+    "steps": 141,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 237,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 18,
+    "steps": 119,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 27,
+    "steps": 174,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 26,
+    "steps": 193,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 89,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 19,
+    "steps": 151,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 84,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 18,
+    "steps": 121,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 32,
+    "steps": 210,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 8,
+    "steps": 59,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 254,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 34,
+    "steps": 221,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 19,
+    "steps": 126,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 35,
+    "steps": 275,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 5,
+    "steps": 39,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 30,
+    "steps": 249,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 39,
+    "steps": 242,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 29,
+    "steps": 185,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 19,
+    "steps": 134,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 25,
+    "steps": 225,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 45,
+    "steps": 373,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 7,
+    "steps": 64,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 25,
+    "steps": 254,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 20,
+    "steps": 154,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 11,
+    "steps": 82,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 18,
+    "steps": 155,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 32,
+    "steps": 235,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 41,
+    "steps": 311,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 42,
+    "steps": 388,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 31,
+    "steps": 240,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 28,
+    "steps": 265,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 12,
+    "steps": 93,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 31,
+    "steps": 235,
+    "cause": "self",
+    "safe_moves": 0
+   }
+  ]
+ },
+ "mlp-25": {
+  "summary": {
+   "mean": 194.27,
+   "ci95": [
+    184.23,
+    202.99
+   ],
+   "median": 214.0,
+   "max": 220,
+   "min": 57,
+   "mean_steps": 3642.47,
+   "causes": {
+    "self-avoidable": 0.07,
+    "self-trapped": 0.33,
+    "starving": 0.54,
+    "timeout": 0.01,
+    "walls-trapped": 0.05
+   }
+  },
+  "games": [
+   {
+    "score": 217,
+    "steps": 4445,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 217,
+    "steps": 4437,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4262,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 217,
+    "steps": 4081,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 4211,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 215,
+    "steps": 4239,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 220,
+    "steps": 4260,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 216,
+    "steps": 3744,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 209,
+    "steps": 3915,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 57,
+    "steps": 522,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 209,
+    "steps": 4498,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 4836,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 214,
+    "steps": 4107,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 209,
+    "steps": 4360,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4129,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 220,
+    "steps": 3894,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 216,
+    "steps": 3749,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 220,
+    "steps": 3915,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 213,
+    "steps": 3845,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 84,
+    "steps": 929,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 216,
+    "steps": 4266,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 215,
+    "steps": 4084,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 214,
+    "steps": 3996,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 216,
+    "steps": 4202,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 86,
+    "steps": 797,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 215,
+    "steps": 4187,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 3696,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 209,
+    "steps": 4756,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4239,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 216,
+    "steps": 4393,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 220,
+    "steps": 4411,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 112,
+    "steps": 1392,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 217,
+    "steps": 4284,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 216,
+    "steps": 4105,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 213,
+    "steps": 4186,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 98,
+    "steps": 1039,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 220,
+    "steps": 4049,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 203,
+    "steps": 3438,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 82,
+    "steps": 759,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 215,
+    "steps": 4146,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 82,
+    "steps": 752,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 217,
+    "steps": 4515,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4832,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 211,
+    "steps": 4722,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 3977,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4143,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 216,
+    "steps": 4073,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 197,
+    "steps": 3500,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 195,
+    "steps": 3724,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4564,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 4053,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 218,
+    "steps": 4040,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 215,
+    "steps": 3596,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4459,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 4335,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 217,
+    "steps": 3952,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 214,
+    "steps": 3988,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4257,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4271,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4007,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 83,
+    "steps": 781,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 213,
+    "steps": 4146,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 4121,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 4188,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 216,
+    "steps": 4074,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 211,
+    "steps": 3751,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4242,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4222,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 3659,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 3900,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 214,
+    "steps": 3804,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 220,
+    "steps": 3654,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 216,
+    "steps": 3998,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 215,
+    "steps": 3995,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 96,
+    "steps": 968,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 60,
+    "steps": 577,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 215,
+    "steps": 3872,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4003,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 82,
+    "steps": 899,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 213,
+    "steps": 4389,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4461,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 4402,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 209,
+    "steps": 3856,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4064,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 217,
+    "steps": 4679,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 89,
+    "steps": 1099,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 82,
+    "steps": 921,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 218,
+    "steps": 4143,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 214,
+    "steps": 3532,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4329,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 201,
+    "steps": 3618,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4110,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4032,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 68,
+    "steps": 644,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 213,
+    "steps": 4004,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4163,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4688,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4083,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 67,
+    "steps": 613,
+    "cause": "walls",
+    "safe_moves": 0
+   },
+   {
+    "score": 215,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   }
+  ]
+ },
+ "cnn-film": {
+  "summary": {
+   "mean": 186.29,
+   "ci95": [
+    176.67,
+    194.91025
+   ],
+   "median": 203.0,
+   "max": 219,
+   "min": 2,
+   "mean_steps": 3907.61,
+   "causes": {
+    "self-avoidable": 0.07,
+    "self-trapped": 0.09,
+    "starving": 0.71,
+    "timeout": 0.13
+   }
+  },
+  "games": [
+   {
+    "score": 203,
+    "steps": 3799,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 195,
+    "steps": 4161,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 215,
+    "steps": 4856,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 218,
+    "steps": 4382,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 199,
+    "steps": 3614,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4081,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 203,
+    "steps": 4831,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 75,
+    "steps": 988,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 203,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 199,
+    "steps": 3946,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 193,
+    "steps": 4483,
+    "cause": "starving",
+    "safe_moves": 3
+   },
+   {
+    "score": 217,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 185,
+    "steps": 3011,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 92,
+    "steps": 1142,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 199,
+    "steps": 4384,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 183,
+    "steps": 3334,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 203,
+    "steps": 4383,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 205,
+    "steps": 4797,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 205,
+    "steps": 4742,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 201,
+    "steps": 4422,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 205,
+    "steps": 4765,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 203,
+    "steps": 4336,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 201,
+    "steps": 4249,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 213,
+    "steps": 4654,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 201,
+    "steps": 4042,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4280,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 205,
+    "steps": 4645,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 189,
+    "steps": 3712,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 219,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 2,
+    "steps": 248,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 183,
+    "steps": 3465,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 212,
+    "steps": 4832,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 74,
+    "steps": 821,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 195,
+    "steps": 4458,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 197,
+    "steps": 4452,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 205,
+    "steps": 4449,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 214,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 211,
+    "steps": 4747,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4055,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 215,
+    "steps": 4140,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 197,
+    "steps": 3500,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 203,
+    "steps": 4256,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 205,
+    "steps": 4924,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 213,
+    "steps": 4075,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 179,
+    "steps": 3444,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 207,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 203,
+    "steps": 3773,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 200,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 177,
+    "steps": 4033,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 211,
+    "steps": 4944,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 193,
+    "steps": 4004,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 67,
+    "steps": 686,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 209,
+    "steps": 4714,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 203,
+    "steps": 4470,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 42,
+    "steps": 388,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 68,
+    "steps": 676,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 203,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 181,
+    "steps": 3451,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 207,
+    "steps": 4940,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 209,
+    "steps": 4466,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 66,
+    "steps": 703,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 214,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 213,
+    "steps": 4019,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 208,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 78,
+    "steps": 901,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4562,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 205,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 209,
+    "steps": 4538,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 216,
+    "steps": 4404,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 197,
+    "steps": 3676,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 211,
+    "steps": 4131,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 197,
+    "steps": 4139,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 201,
+    "steps": 4409,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 64,
+    "steps": 718,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 216,
+    "steps": 4671,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 191,
+    "steps": 4684,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 201,
+    "steps": 4176,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4916,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 189,
+    "steps": 3595,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 187,
+    "steps": 3533,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 211,
+    "steps": 5000,
+    "cause": "timeout",
+    "safe_moves": null
+   },
+   {
+    "score": 213,
+    "steps": 4988,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 57,
+    "steps": 442,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 203,
+    "steps": 4037,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 201,
+    "steps": 4004,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 216,
+    "steps": 4437,
+    "cause": "self",
+    "safe_moves": 0
+   },
+   {
+    "score": 207,
+    "steps": 4889,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 195,
+    "steps": 4223,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 151,
+    "steps": 2649,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 201,
+    "steps": 4099,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 199,
+    "steps": 4024,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 84,
+    "steps": 844,
+    "cause": "self",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4878,
+    "cause": "starving",
+    "safe_moves": 2
+   },
+   {
+    "score": 208,
+    "steps": 4343,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 215,
+    "steps": 4691,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 195,
+    "steps": 3977,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 207,
+    "steps": 4063,
+    "cause": "starving",
+    "safe_moves": 1
+   },
+   {
+    "score": 181,
+    "steps": 2948,
+    "cause": "starving",
+    "safe_moves": 1
+   }
+  ]
+ }
+}
