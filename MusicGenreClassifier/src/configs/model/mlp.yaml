@@ -1,0 +1,8 @@
+name: mlp
+num_classes: 10
+learning_rate: 0.001
+weight_decay: 0.0001
+scheduler_patience: 4
+scheduler_factor: 0.5
+dropout: 0.3
+hidden_layers: [256, 64]

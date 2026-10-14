@@ -11,3 +11,4 @@ aug_probability: 0.5
 aug_noise_std: 0.02
 aug_time_mask_max: 8
 aug_frequency_mask_max: 3
+split_by_track: true

@@ -1,6 +1,6 @@
 import numpy as np
 import lightning as L
-from sklearn.model_selection import GroupShuffleSplit
+from sklearn.model_selection import train_test_split
 import torch
 from torch.utils.data import DataLoader, WeightedRandomSampler
 
@@ -21,7 +21,7 @@ class GTZANDataModule(L.LightningDataModule):
             aug_noise_std: float = 0.02,
             aug_time_mask_max: int = 8,
             aug_frequency_mask_max: int = 3,
-
+            split_by_track: bool = True,
         ):
         super().__init__()
         self.save_hyperparameters()
@@ -29,7 +29,7 @@ class GTZANDataModule(L.LightningDataModule):
     def setup(self, stage=None):
         inputs, targets, groups = self.load_data()
 
-        X_train, X_val, X_test, y_train, y_val, y_test = self.split_data(inputs, targets, groups)
+        X_train, X_val, X_test, y_train, y_val, y_test, self.test_groups = self.split_data(inputs, targets, groups)
 
         X_train, X_val, X_test, self.mean, self.std = self.normalize_data(X_train, X_val, X_test)
 
@@ -67,33 +67,34 @@ class GTZANDataModule(L.LightningDataModule):
         return inputs, data["labels"], data["track_ids"]
 
     def split_data(self, inputs, targets, groups):
-        val_test_size = self.hparams.test_size+self.hparams.validation_size
+        """Split par morceau (les 10 segments d'un morceau restent dans le même ensemble, pas de fuite)
+        et stratifié par genre (chaque genre a la même part de morceaux dans train / val / test).
+        split_by_track=False : contre-exemple volontaire, les segments sont répartis un par un et
+        ceux d'un même morceau se retrouvent à la fois en train et en test (fuite)."""
+        if self.hparams.split_by_track:
+            units, first_index = np.unique(groups, return_index=True)
+            unit_of_sample = groups
+        else:
+            units = first_index = unit_of_sample = np.arange(len(targets))
+        unit_labels = targets[first_index]
+        val_test_size = self.hparams.test_size + self.hparams.validation_size
 
-        first_split = GroupShuffleSplit(
-                n_splits=1,
-                test_size=val_test_size,
-                random_state=self.hparams.random_seed,
-            )
-
-        train_indices, temporary_indices = next(first_split.split(inputs, targets, groups))
-        temporary_groups = groups[temporary_indices]
-
-        second_split = GroupShuffleSplit(
-            n_splits=1,
-            test_size=round(self.hparams.test_size/val_test_size, 2),
+        train_units, temporary_units, _, temporary_labels = train_test_split(
+            units, unit_labels,
+            test_size=val_test_size,
+            stratify=unit_labels,
+            random_state=self.hparams.random_seed,
+        )
+        validation_units, test_units = train_test_split(
+            temporary_units,
+            test_size=self.hparams.test_size / val_test_size,
+            stratify=temporary_labels,
             random_state=self.hparams.random_seed,
         )
 
-        validation_relative, test_relative = next(
-            second_split.split(
-                temporary_indices,
-                targets[temporary_indices],
-                temporary_groups,
-            )
-        )
-
-        validation_indices = temporary_indices[validation_relative]
-        test_indices = temporary_indices[test_relative]
+        train_indices = np.isin(unit_of_sample, train_units)
+        validation_indices = np.isin(unit_of_sample, validation_units)
+        test_indices = np.isin(unit_of_sample, test_units)
 
         return (
             inputs[train_indices],
@@ -102,6 +103,7 @@ class GTZANDataModule(L.LightningDataModule):
             targets[train_indices],
             targets[validation_indices],
             targets[test_indices],
+            groups[test_indices],
         )
 
     def normalize_data(self, X_train, X_val, X_test):
@@ -125,7 +127,8 @@ class GTZANDataModule(L.LightningDataModule):
         dataset = AudioFeatureDataset(inputs, targets, transform=transform)
 
         sampler = None
-        if oversample_classes and oversample_factor > 1:
+        # shuffle n'est vrai que pour le train : val et test ne doivent jamais être rééchantillonnés
+        if shuffle and oversample_classes and oversample_factor > 1:
             sample_weights = torch.ones(len(targets), dtype=torch.double)
             target_array = np.asarray(targets)
             for class_index in oversample_classes:

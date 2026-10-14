@@ -3,3 +3,5 @@ dataset/
 wandb/
 lightning_logs/
 MusicGenreClassifier/
+# benchmark : checkpoints et metrics.csv par run (results/benchmark.json est versionné)
+results/logs/

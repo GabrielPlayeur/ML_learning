@@ -79,18 +79,23 @@ class GenreClassifierModule(L.LightningModule):
     def on_test_epoch_end(self):
         # Courbes tracées une seule fois, sur l'ensemble du test set, plutot
         # que recalculees a chaque epoque de validation.
-        probs = torch.cat(self._test_probs).numpy()
-        targets = torch.cat(self._test_targets).numpy()
-        preds = probs.argmax(axis=1).tolist()
-
-        import wandb
-        wandb.log({
-            "test/roc_curve": wandb.plot.roc_curve(targets.tolist(), probs.tolist()),
-            "test/pr_curve": wandb.plot.pr_curve(targets.tolist(), probs.tolist()),
-            "test/confusion_matrix": wandb.plot.confusion_matrix(y_true=targets.tolist(), preds=preds),
-        })
+        # Les probabilités restent dans test_probs / test_targets (vote par morceau, benchmark).
+        self.test_probs = torch.cat(self._test_probs).numpy()
+        self.test_targets = torch.cat(self._test_targets).numpy()
         self._test_probs.clear()
         self._test_targets.clear()
+
+        from lightning.pytorch.loggers import WandbLogger
+        if not isinstance(self.logger, WandbLogger):
+            return
+        import wandb
+        targets = self.test_targets.tolist()
+        probs = self.test_probs.tolist()
+        wandb.log({
+            "test/roc_curve": wandb.plot.roc_curve(targets, probs),
+            "test/pr_curve": wandb.plot.pr_curve(targets, probs),
+            "test/confusion_matrix": wandb.plot.confusion_matrix(y_true=targets, preds=self.test_probs.argmax(axis=1).tolist()),
+        })
 
     def configure_optimizers(self):
         optimizer = torch.optim.AdamW(
